@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: simple-nodejs-app-bidb
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-wllz-tenant/nodejs-users/simple-nodejs-app-bidb@sha256:df34751221de895341735e3420391c570360d2ba8b6c338ed543d0d375c1a99e
         name: my-nodejs
         ports:
         - containerPort: 3001
