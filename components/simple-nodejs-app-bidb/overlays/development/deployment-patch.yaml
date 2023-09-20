@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-bidb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-wllz-tenant/nodejs-users/simple-nodejs-app-bidb@sha256:df34751221de895341735e3420391c570360d2ba8b6c338ed543d0d375c1a99e
+        name: my-nodejs
+        resources: {}
+status: {}
